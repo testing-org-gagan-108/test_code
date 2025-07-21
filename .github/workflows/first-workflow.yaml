@@ -1,10 +1,9 @@
 name: First Workflow
 on: [push]
 
-
 jobs:
   run-shell-commands:
-    run-on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
-      - name: echo a tring 
+      - name: echo a tring
         run: echo "Hello, World!"
