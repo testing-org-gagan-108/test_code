@@ -1,0 +1,14 @@
+name: Working and Shells
+on: [push]
+jobs:
+  run-shell-commands:
+    runs-on: ubuntu-latest
+    steps:
+      - name: echo a directory 
+        run: |
+          pwd 
+          ls -a 
+          echo $GITHUB_SHA
+          echo $GITHUB_REPOSITORY
+          echo $GITHUB_WORKSPACE
+
